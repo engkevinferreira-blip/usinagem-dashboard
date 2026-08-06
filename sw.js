@@ -1,5 +1,5 @@
 // Painel Usinagem - cache offline simples (troque o nome do cache p/ forcar update)
-const CACHE = 'usinagem-v202608041738';
+const CACHE = 'usinagem-v202608061000';
 const ATIVOS = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ATIVOS)).then(() => self.skipWaiting()));
